@@ -1,0 +1,900 @@
+@font-face {
+    /* bold */
+    font-family: "Roboto";
+    src: url('./fonts/Roboto/Roboto-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    /* medium */
+    font-family: "Roboto";
+    src: url('./fonts/Roboto/Roboto-Medium.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    /* medium */
+    font-family: "Roboto";
+    src: url('./fonts/Roboto/Roboto-Regular.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Tiempos Headline Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Tiempos Headline Regular'), url('TiemposHeadline-Regular.woff') format('woff');
+}
+
+.bg {
+    margin: 0px !important;
+    width: 83vw;
+    height: 83vh;
+    background-image: url("homebg2.png");
+    background-size: 83vw 77vh;
+    background-position: 3vw;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.para2 {
+    width: 41vw;
+}
+
+.para4 {
+    text-decoration: none;
+    width: 10vw;
+    color: black;
+}
+
+.para4 a {
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+}
+
+.para4 a:hover {
+    color: rgb(16, 107, 150);
+}
+
+.change-height {
+    height: 50vh;
+}
+
+.nav-logo {
+    box-sizing: border-box;
+    display: inline-block;
+    text-decoration: none;
+    padding: 1px 0;
+}
+
+.nav-img {
+    display: block;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0px;
+    vertical-align: middle;
+    width: 256px;
+    height: auto;
+}
+
+.bg-red {
+    background: red;
+    margin-top: -700px;
+}
+
+.nav-button {
+    background: #ffffff;
+    padding: 5px 15px;
+    border-radius: 7px;
+}
+
+.nav-button-none {
+    background: none !important;
+    padding: 5px 15px;
+}
+
+.nav-button:hover {
+    transform: translateY(-2px);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-item {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.nav-item a {
+    color: #0F2137;
+}
+
+.scrollUp {
+    background: #fff;
+    padding: 50px 0;
+    height: 80px;
+    line-height: 80px;
+    box-shadow: 2px 2px 10px rgba(44, 44, 44, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9998;
+    transition: all 0.3s ease 0s;
+}
+
+.home--moto {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    background: white;
+    border-radius: 10px;
+    padding: 5px 25px;
+    box-shadow: 8px 10px 45px rgba(0, 0, 0, 0.16);
+}
+
+.home--moto-highlight {
+    color: #61C7B0;
+}
+
+.home--tagline {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 51px;
+    line-height: 70px;
+    color: #14202E;
+}
+
+.home--moto-description {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: rgba(52, 61, 72, 0.8);
+    line-height: 35px;
+}
+
+.cardimg1 {
+    box-shadow: 6px 18px 31px rgb(174, 178, 179);
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    /* width: calc(50% - 25px); */
+    margin-left: 39px;
+    margin-bottom: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 53px 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.cardimg1:hover {
+    box-shadow: 6px 18px 31px rgb(32, 136, 255);
+}
+
+hr.new1 {
+    border: 1px solid #8C312E;
+    width: 15vw;
+}
+
+.heading1 {
+    font-family: 'Tiempos Headline Regular';
+    color: #14202E;
+    font-weight: 300;
+}
+
+.button--red {
+    display: inline-block;
+    border-radius: 15px;
+    background-color: rgba(22, 134, 161, 0.986);
+    min-height: 48px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    min-width: 120px;
+    text-decoration: none;
+    border-width: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.button--red .hover1 {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button--red .hover1:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button--red:hover .hover1 {
+    padding-right: 25px;
+}
+
+.button--red:hover .hover1:after {
+    opacity: 1;
+    right: 0;
+}
+
+.para1 {
+    left: 10vw
+}
+
+.pragi2 {
+    left: 55vw;
+}
+
+.para3 {
+    left: -12vw;
+}
+
+.hover1 {
+    font-weight: normal;
+}
+
+.bg-dark {
+    background: black !important;
+}
+
+.partner-enquiry {
+    width: 90%;
+    margin: auto;
+    background: rgba(128, 128, 128, 0.616);
+    color: var(--white);
+    border-radius: 10px;
+    -webkit-filter: drop-shadow(16px 10px 13px rgba(0, 0, 0, 0.16));
+    filter: drop-shadow(16px 10px 13px rgba(0, 0, 0, 0.16));
+}
+
+.partner-enquiry--content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 65% 30%;
+    grid-template-columns: 65% 30%;
+    padding: 5%;
+}
+
+.partner-enquiry--content--text h2 {
+    font-family: 'Brandon Bold', sans-serif;
+    font-size: 3rem;
+}
+
+.partner-enquiry--content--text p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    line-height: 30px;
+}
+
+.sq-btn {
+    font-family: 'Brandon Bold', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+}
+
+.sq-btn:hover {
+    font-family: 'Brandon Bold', sans-serif;
+    font-size: 1.5rem;
+    color: rgb(64, 116, 151);
+    text-decoration: none;
+    padding: 15px 30px;
+}
+
+.dp-1 {
+    width: 120vw;
+}
+
+@media (min-width: 1399px) {
+    .main-description>p {
+        line-height: 30px;
+    }
+    .toggle {
+        display: none;
+    }
+    .industry-services {
+        height: 1000px !important;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .main-content .main-description h2 {
+        width: 85%;
+        line-height: 50px;
+    }
+    .navigation-item .logo-text .title-1 {
+        font-size: 1.5rem;
+    }
+    .navigation-item .logo-text .title-2 {
+        font-size: 1.5rem;
+    }
+    .industry-services {
+        height: 770px !important;
+    }
+    .engineering-services--left-nav h2 {
+        font-size: 1.1rem !important;
+    }
+    .client-image {
+        top: 35%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        border-bottom: 2px solid rgba(255, 255, 255, 1);
+    }
+    .nav-list {
+        display: none;
+    }
+    .contact {
+        display: none;
+    }
+    .logo {
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+        grid-column: 1/3;
+    }
+    .toggle {
+        display: inline-block;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+        -ms-grid-column-align: right;
+        justify-self: right;
+    }
+    /* .bg {
+        margin: 0px !important;
+        width: 83vw;
+        height: 70vh;
+        background-image: url("homebg2.png");
+        background-size: 156vw 77vh;
+        background-position: 3vw;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }*/
+    .para2 {
+        width: 46vw;
+    }
+    .para4 {
+        text-decoration: none;
+        width: 38vw;
+        color: black;
+    }
+    .para3 {
+        left: 26vw;
+    }
+    .pragi2 {
+        left: 25vw;
+    }
+    .cardimg1 {
+        margin-left: 72px;
+        margin-bottom: 27px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 53px 40px;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+    .main-content {
+        margin-top: 0;
+        width: 100%;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        min-height: none;
+        max-height: none;
+    }
+    .main-content .main-image {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 1;
+        grid-row: 1/2;
+    }
+    .main-content .main-description h2 {
+        width: 100%;
+        text-align: center;
+    }
+    .main-description>p {
+        width: 90%;
+        margin: auto;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+    .begin-button {
+        width: 80%;
+        margin: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .services h2 {
+        padding-top: 30px;
+    }
+    .services-grid {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+    .services h2 {
+        margin-bottom: 0;
+    }
+    .services-grid * {
+        margin-top: 30px;
+    }
+    .industry-services {
+        height: 560px !important;
+    }
+    .quality {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+    .quality-description h2 {
+        text-align: center;
+    }
+    .engineering-services--left-nav h2 {
+        font-size: 0.8rem !important;
+    }
+    .engineering-services--left-nav--item img {
+        top: 29px;
+        max-width: 17px;
+    }
+    .engineering-services--right-content p {
+        font-size: 1.2rem;
+    }
+    .engineering-services--right-content ul {
+        font-size: 1.2rem;
+    }
+    .partner-enquiry--content {
+        -ms-grid-columns: 70%;
+        grid-template-columns: 70%;
+    }
+    .enquire-button {
+        text-align: center;
+    }
+    .partner-enquiry {
+        position: relative;
+    }
+    .partner-enquiry--content--image {
+        position: absolute;
+        z-index: -1;
+        right: -55px;
+        top: 80px;
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    .newsletter-container h2 {
+        text-align: center;
+    }
+    .subscribe-input {
+        width: 100%;
+    }
+    .subscribe-btn {
+        width: 100%;
+        margin: auto;
+    }
+    .client-image {
+        top: 44%;
+        transform: scale(0.4);
+    }
+    .client-description {
+        bottom: 20%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    header {
+        border-bottom: 2px solid rgba(255, 255, 255, 1);
+    }
+    .nav-list {
+        display: none;
+    }
+    .contact {
+        display: none;
+    }
+    .logo {
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+        grid-column: 1/3;
+    }
+    .toggle {
+        display: inline-block;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+        -ms-grid-column-align: right;
+        justify-self: right;
+    }
+    .main-content {
+        margin-top: 0;
+        width: 100%;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        min-height: none;
+        max-height: none;
+    }
+    .main-content .main-image {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 1;
+        grid-row: 1/2;
+    }
+    .main-content .main-description h2 {
+        padding-top: 10px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .main-description>p {
+        width: 90%;
+        margin: auto;
+        line-height: 30px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding-top: 10px;
+        font-size: 1.1rem;
+    }
+    .begin-button {
+        margin-top: 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 90%;
+        margin: auto;
+    }
+    .services h2 {
+        padding-top: 30px;
+    }
+    .services-grid {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+    .services h2 {
+        margin-bottom: 0;
+    }
+    .services-grid * {
+        margin-top: 30px;
+    }
+    .industry-services {
+        height: 440px!important;
+    }
+    .mech-service h3,
+    .plant-service h3,
+    .control-eng h3,
+    .infra-services h3,
+    .it-services h3,
+    .manpower-services h3 {
+        font-size: 1rem !important;
+    }
+    .quality {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+    .quality-description h2 {
+        text-align: center;
+        line-height: 55px;
+    }
+    .engineering-services {
+        display: none;
+    }
+    #engg-service-mobile {
+        display: block;
+    }
+    .tools-list {
+        padding-top: 70px;
+        width: 50%;
+    }
+    .engineering-services--right-content ul {
+        width: 80%;
+    }
+    .services-overview {
+        width: 80%;
+    }
+    .services-overview h2 {
+        font-size: 4.5rem;
+    }
+    .services-overview p {
+        font-size: 1.15rem;
+    }
+    .partner-enquiry--content {
+        -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    }
+    .enquire-button {
+        text-align: left;
+    }
+    .partner-enquiry--content--image {
+        z-index: -1;
+        text-align: center;
+    }
+    .newsletter-container h2 {
+        text-align: center;
+    }
+    .subscribe-input {
+        width: 100%;
+    }
+    .subscribe-btn--container {
+        display: block;
+        width: 60%;
+        margin: auto;
+    }
+    .quality-description h2 {
+        margin: auto;
+    }
+    .quality-even {
+        grid-template-columns: 1fr;
+    }
+    .quality-even--description {
+        grid-row: 2;
+    }
+    .quality-even--image {
+        grid-row: 1;
+    }
+    .services-entry~p {
+        width: 80%;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    header {
+        border-bottom: 2px solid rgba(255, 255, 255, 1);
+    }
+    .nav-list {
+        display: none;
+    }
+    .contact {
+        display: none;
+    }
+    .logo {
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+        grid-column: 1/3;
+        -ms-grid-column-align: right;
+        justify-self: right;
+    }
+    .toggle {
+        display: inline-block;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+        -ms-grid-column-align: right;
+        justify-self: right;
+    }
+    .bg {
+        margin: 0px !important;
+        width: 83vw;
+        height: 70vh;
+        background-image: url("homebg2.png");
+        background-size: 156vw 77vh;
+        background-position: 3vw;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+    .para2 {
+        width: 95vw;
+    }
+    .para4 {
+        text-decoration: none;
+        width: 38vw;
+        color: black;
+    }
+    .para3 {
+        left: 14vw;
+    }
+    .pragi2 {
+        left: 0vw;
+    }
+    .cardimg1 {
+        margin-left: 40vw;
+        margin-bottom: 27px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        left: -17vw;
+    }
+    .nav-hr-breakdown {
+        display: block;
+    }
+    .navigation-item .logo-text .title-1 {
+        font-size: 1.5rem;
+    }
+    .navigation-item .logo-text .title-2 {
+        font-size: 1.5rem;
+    }
+    .begin-button {
+        width: 95%;
+        margin: auto;
+    }
+    .main-content {
+        margin-top: 0;
+        width: 100%;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        min-height: none;
+        max-height: none;
+    }
+    .main-content .main-image {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 1;
+        grid-row: 1/2;
+    }
+    .main-content .main-description h2 {
+        padding-top: 10px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .main-description>p {
+        width: 90%;
+        margin: auto;
+        line-height: 30px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 1rem;
+        padding-top: 10px;
+    }
+    .begin-button {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .services h2 {
+        padding-top: 30px;
+    }
+    .services-grid {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .services h2 {
+        margin-bottom: 0;
+    }
+    .services-grid * {
+        margin-top: 30px;
+    }
+    .industry-services {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        height: auto !important;
+        margin-bottom: 40px;
+    }
+    .mech-service img,
+    .plant-service img,
+    .control-eng img,
+    .infra-services img,
+    .it-services img,
+    .manpower-services img {
+        width: 100% !important;
+    }
+    .quality {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+    .quality-description h2 {
+        text-align: center;
+        line-height: 65px;
+    }
+    .sq-btn {
+        font-size: 1rem
+    }
+    .services-overview {
+        width: 80%;
+    }
+    .engineering-services {
+        display: none;
+    }
+    #engg-service-mobile {
+        display: block;
+    }
+    .engineering-services--right-content p {
+        font-size: 1rem !important;
+    }
+    .engineering-services--right-content h3 {
+        font-size: 1.5rem !important;
+    }
+    .engineering-services--right-content ul {
+        font-size: 1rem !important;
+    }
+    .tools-list {
+        padding-top: 50px;
+        width: 70%;
+    }
+    .services-overview h2 {
+        font-size: 3.5rem;
+    }
+    .services-overview p {
+        font-size: 1rem;
+    }
+    .services-overview p:nth-last-child(1) {
+        margin-top: 25px;
+    }
+    .partner-enquiry {
+        overflow: hidden;
+    }
+    .partner-enquiry--content {
+        -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    }
+    .enquire-button {
+        text-align: center;
+    }
+    .partner-enquiry--content--image {
+        z-index: -1;
+    }
+    .partner-enquiry--content--text h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .partner-enquiry--content--text p {
+        font-size: 1rem;
+    }
+    .newsletter-container {
+        width: 85%;
+    }
+    .newsletter-container h2 {
+        text-align: center;
+    }
+    .subscribe-input {
+        width: 100%;
+    }
+    .subscribe-btn--container {
+        display: block;
+        width: 60%;
+        margin: auto;
+    }
+    .quality-description h2 {
+        margin: auto;
+    }
+    .quality-even {
+        grid-template-columns: 1fr;
+    }
+    .quality-even--description {
+        grid-row: 2;
+    }
+    .quality-even--image {
+        grid-row: 1;
+    }
+    .services-entry~p {
+        width: 80%;
+        font-size: 1rem;
+    }
+    .quality-description h2 {
+        margin: auto;
+        font-size: 1.5rem !important;
+        line-height: 35px !important;
+    }
+}
